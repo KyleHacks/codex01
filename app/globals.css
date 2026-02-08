@@ -65,18 +65,104 @@ a {
   border-bottom: 1px solid rgba(229, 231, 235, 0.08);
 }
 
-.section h2 {
+.section-header h2 {
   margin: 0 0 0.5rem;
   font-size: 2.25rem;
   font-weight: 600;
   color: #e5e7eb;
 }
 
-.section p {
+.section-header p {
   margin: 0;
   max-width: 520px;
   color: rgba(229, 231, 235, 0.75);
   font-size: 1rem;
+}
+
+.hero {
+  padding: 5rem 0 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.hero-text {
+  max-width: 560px;
+  margin: 0;
+  color: rgba(229, 231, 235, 0.7);
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-actions a {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+
+.hero-actions .primary {
+  background: #6ee7b7;
+  color: #07110c;
+}
+
+.hero-actions .secondary {
+  border-color: rgba(229, 231, 235, 0.3);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: rgba(110, 231, 183, 0.8);
+  font-weight: 600;
+}
+
+.app-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(15, 23, 42, 0.6);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.app-card h3 {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.app-card p {
+  margin: 0;
+  color: rgba(229, 231, 235, 0.75);
+}
+
+.app-meta {
+  display: grid;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  color: rgba(229, 231, 235, 0.55);
+  margin-bottom: 0.35rem;
 }
 
 @media (max-width: 720px) {
@@ -85,11 +171,15 @@ a {
     justify-content: flex-start;
   }
 
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
   .section {
     padding: 3rem 0 1.5rem;
   }
 
-  .section h2 {
+  .section-header h2 {
     font-size: 1.9rem;
   }
 }
